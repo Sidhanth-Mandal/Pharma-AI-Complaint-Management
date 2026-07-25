@@ -1,0 +1,117 @@
+# ==========================================
+# Environment & Secret files
+# ==========================================
+.env
+*.env
+**/.env
+.env*.local
+!.env.example
+
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+**/venv/
+.venv/
+**/env/
+**/ENV/
+
+# ==========================================
+# Node.js & Frontend
+# ==========================================
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+build/
+**/build/
+.npm
+.vite/
+.eslintcache
+
+# ==========================================
+# Logs and Databases
+# ==========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.sqlite
+*.sqlite3
+*.db
+
+# ==========================================
+# OS & Editor files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# GCP Upload / Deployment Scripts
+# ==========================================
+deploy.ps1
+deploy.sh
+*deploy*.ps1
+*deploy*.sh
+*gcp*
+**/deploy.ps1
+**/deploy.sh
+
+# ==========================================
+# Sample PDF Generator Script
+# ==========================================
+generate_sample_pdfs.py
+**/generate_sample_pdfs.py
+*generate*pdf*.py
+
+# ==========================================
+# PDF Handling Rules
+# ==========================================
+# Ignore all PDF files by default (so generated/temporary PDFs are not tracked)
+*.pdf
+**/*.pdf
+
+# EXCEPTION: Do NOT ignore the sample PDFs
+!backend/sample_complaints/*.pdf
+!**/sample_complaints/*.pdf
