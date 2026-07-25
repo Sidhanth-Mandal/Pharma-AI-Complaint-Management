@@ -1,0 +1,37 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Development files
+.env
+*.env
+.env.*
+
+# Generated files
+sample_complaints/
+*.pdf
+
+# IDE / OS
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
+
+# Alembic versions (optional – include if you use migrations)
+# alembic/versions/
+
+# Logs
+*.log
+
+# Test files
+tests/
+test_*.py
+*_test.py
