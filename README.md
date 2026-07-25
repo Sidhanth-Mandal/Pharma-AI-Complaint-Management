@@ -119,16 +119,23 @@ AIVOA Task/
 
 ## Setup & Installation
 
-### 1. Configure Supabase
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sidhanth-Mandal/Pharma-AI-Complaint-Management.git
+cd Pharma-AI-Complaint-Management
+```
+
+### 2. Configure Supabase
 
 1. Create a new project at [supabase.com](https://supabase.com)
 2. Go to **Settings → Database** and copy the Connection String (URI format)
 3. The URL format is: `postgresql://postgres:[PASSWORD]@db.[PROJECT-REF].supabase.co:5432/postgres`
 
-### 2. Backend Setup
+### 3. Backend Setup
 
 ```bash
-cd "AIVOA Task/backend"
+cd backend
 
 # Create and activate virtual environment
 python -m venv venv
@@ -155,7 +162,7 @@ DATABASE_URL=postgresql://postgres:YOUR_PASSWORD@db.YOUR_PROJECT.supabase.co:543
 ALLOWED_ORIGINS=http://localhost:5173
 ```
 
-### 3. Initialize Database & Seed Data
+### 4. Initialize Database & Seed Data
 
 ```bash
 # Tables are auto-created on first startup via SQLAlchemy
@@ -163,7 +170,7 @@ ALLOWED_ORIGINS=http://localhost:5173
 python seed_data.py
 ```
 
-### 4. Start Backend
+### 5. Start Backend
 
 ```bash
 uvicorn app.main:app --reload --port 8000
@@ -171,10 +178,10 @@ uvicorn app.main:app --reload --port 8000
 
 Backend API docs available at: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-### 5. Frontend Setup
+### 6. Frontend Setup
 
 ```bash
-cd "AIVOA Task/frontend"
+cd ../frontend
 
 npm install
 npm run dev
