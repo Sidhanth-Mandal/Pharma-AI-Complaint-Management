@@ -54,7 +54,9 @@ When a user submits natural language text or uploads an inspection document, the
 
 AIVOA supports frictionless intake of existing quality documents via `UploadZone.jsx` and `PasteArea.jsx`:
 
-![Frontend Document Upload Workflow](images/frontend_document_upload_workflow.png)
+<p align="center">
+  <img src="images/frontend_document_upload_workflow.png" width="450" alt="Frontend Document Upload Workflow" />
+</p>
 
 1. **File Drop / Click Upload**: Uses `react-dropzone` to accept `.pdf`, `.docx`, `.txt`, and `.eml` files up to 10 MB.
 2. **Progress Visualizer**: Renders `ExtractionProgress.jsx`, providing immediate visual feedback during backend document parsing and Llama-3.3-70B extraction.

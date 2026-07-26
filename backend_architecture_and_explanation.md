@@ -93,7 +93,9 @@ The FastAPI application (`app/main.py`) organizes endpoints into three routers: 
 
 AIVOA uses **SQLAlchemy 2.0** with declarative mappings (`app/models/complaint.py`) and validates data transfer objects using **Pydantic v2** (`app/schemas/complaint.py`).
 
-![Backend Database ER Diagram](images/backend_database_er_diagram.png)
+<p align="center">
+  <img src="images/backend_database_er_diagram.png" width="500" alt="Backend Database ER Diagram" />
+</p>
 
 > [!IMPORTANT]
 > **PostgreSQL JSONB Support**: Complex multi-item lists such as `root_causes`, `capa_actions`, and `risk_assessment` are stored as native JSON/JSONB columns in PostgreSQL, allowing schema evolution without database migrations.
